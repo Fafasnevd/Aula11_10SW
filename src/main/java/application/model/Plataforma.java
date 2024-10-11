@@ -1,5 +1,6 @@
 package application.model;
 
+import application.record.PlataformaDTO;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,5 +20,10 @@ public class Plataforma {
     private long id;
     @Column(nullable = false, unique = true)
     private String nome;
+
+    public Plataforma(PlataformaDTO dados) {
+        this.id = dados.id();
+        this.nome = dados.nome();
+    }
     
 }

@@ -1,0 +1,8 @@
+@url = https://8080-fafasnevd-aula1110sw-fkwas5bccx3.ws-us116.gitpod.io
+
+POST {{url}}/plataformas
+Content-Type: application/json 
+
+{
+    "nome" : "PC"
+}
