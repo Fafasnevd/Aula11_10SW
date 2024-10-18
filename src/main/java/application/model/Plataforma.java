@@ -8,12 +8,15 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.NoArgsConstructor;
 import jakarta.persistence.GenerationType;
+
 
 @Entity
 @Table(name = "plataformas")
 @Getter
 @Setter
+@NoArgsConstructor
 public class Plataforma {
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
